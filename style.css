@@ -38,19 +38,19 @@
 }
 
 .cube .three {
-	transform: rotateY(180deg) translateZ(150px);
-}
-
-.cube .four {
-	transform: rotateY(-90deg) translateZ(150px);
-}
-
-.cube .five {
 	transform: rotateX(90deg) translateZ(150px);
 }
 
-.cube .six {
+.cube .four {
 	transform: rotateX(-90deg) translateZ(150px);
+}
+
+.cube .five {
+	transform: rotateY(-90deg) translateZ(150px);
+}
+
+.cube .six {
+	transform: rotateY(180deg) translateZ(150px);
 }
 
 .roll-one {
@@ -62,17 +62,17 @@
 }
 
 .roll-three {
-	transform: translateZ(-150px) rotateY(-180deg);
-}
-
-.roll-four {
-	transform: translateZ(-150px) rotateY(90deg);
-}
-
-.roll-five {
 	transform: translateZ(-100px) rotateX(-90deg);
 }
 
-.roll-six {
+.roll-four {
 	transform: translateZ(-100px) rotateX(90deg);
+}
+
+.roll-five {
+	transform: translateZ(-150px) rotateY(90deg);
+}
+
+.roll-six {
+	transform: translateZ(-150px) rotateY(-180deg);
 }
