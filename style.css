@@ -1,3 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 300px;
+	height: 300px;
+	border: 1px solid #CCC;
+	margin: 80px;
+	perspective: 400px;
+}
+
+.cube {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	transform-style: preserve-3d;
+	transform: translateZ(-150px);
+	transition: transform 1s;
+}
+
 .side {
+	width: 300px;
+	height: 300px;
+	line-height: 300px;
+	position: absolute;
 	background-color: antiquewhite;
+	border: 1px solid black;
+	font-size: 70;
+	text-align: center;
+}
+
+.cube .one {
+	transform: rotateY(0deg) translateZ(150px);
+}
+
+.cube .two {
+	transform: rotateY(90deg) translateZ(150px);
+}
+
+.cube .three {
+	transform: rotateY(180deg) translateZ(150px);
+}
+
+.cube .four {
+	transform: rotateY(-90deg) translateZ(150px);
+}
+
+.cube .five {
+	transform: rotateX(90deg) translateZ(150px);
+}
+
+.cube .six {
+	transform: rotateX(-90deg) translateZ(150px);
+}
+
+.roll-one {
+	transform: translateZ(-150px) rotateY(0deg);
+}
+
+.roll-two {
+	transform: translateZ(-150px) rotateY(-90deg);
+}
+
+.roll-three {
+	transform: translateZ(-150px) rotateY(-180deg);
+}
+
+.roll-four {
+	transform: translateZ(-150px) rotateY(90deg);
+}
+
+.roll-five {
+	transform: translateZ(-150px) rotateX(-90deg);
+}
+
+.roll-six {
+	transform: translateZ(-150px) rotateX(90deg);
 }
