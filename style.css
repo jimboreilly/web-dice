@@ -18,10 +18,33 @@
 	transition: transform 1s;
 }
 
+.cube.roll-one {
+	transform: translateZ(-150px) rotateY(0deg);
+}
+
+.cube.roll-two {
+	transform: translateZ(-150px) rotateY(-90deg);
+}
+
+.cube.roll-three {
+	transform: translateZ(-150px) rotateX(-90deg);
+}
+
+.cube.roll-four {
+	transform: translateZ(-150px) rotateX(90deg);
+}
+
+.cube.roll-five {
+	transform: translateZ(-150px) rotateY(90deg);
+}
+
+.cube.roll-six {
+	transform: translateZ(-150px) rotateY(-180deg);
+}
+
 .side {
 	width: 300px;
 	height: 300px;
-	line-height: 300px;
 	position: absolute;
 	background-color: antiquewhite;
 	border: 2px solid black;
@@ -30,50 +53,120 @@
 	border-radius: 10px;
 }
 
+.dots-container {
+	display: grid;
+	grid-template-rows: 100px 100px 100px;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-areas:
+		"one two three"
+		"four five six"
+		"seven eight nine";
+}
+
 .cube .one {
 	transform: rotateY(0deg) translateZ(150px);
+}
+
+.one .dots-container .dot:nth-of-type(1) {
+	grid-area: five;
 }
 
 .cube .two {
 	transform: rotateY(90deg) translateZ(150px);
 }
 
+.two .dots-container .dot:nth-of-type(1) {
+	grid-area: one;
+}
+
+.two .dots-container .dot:nth-of-type(2) {
+	grid-area: nine;
+}
+
 .cube .three {
 	transform: rotateX(90deg) translateZ(150px);
+}
+
+.three .dots-container .dot:nth-of-type(1) {
+	grid-area: one;
+}
+
+.three .dots-container .dot:nth-of-type(2) {
+	grid-area: five;
+}
+
+.three .dots-container .dot:nth-of-type(3) {
+	grid-area: nine;
 }
 
 .cube .four {
 	transform: rotateX(-90deg) translateZ(150px);
 }
 
+.four .dots-container .dot:nth-of-type(1) {
+	grid-area: one;
+}
+
+.four .dots-container .dot:nth-of-type(2) {
+	grid-area: three;
+}
+
+.four .dots-container .dot:nth-of-type(3) {
+	grid-area: seven;
+}
+
+.four .dots-container .dot:nth-of-type(4) {
+	grid-area: nine;
+}
+
 .cube .five {
 	transform: rotateY(-90deg) translateZ(150px);
+}
+
+.five .dots-container .dot:nth-of-type(1) {
+	grid-area: one;
+}
+
+.five .dots-container .dot:nth-of-type(2) {
+	grid-area: three;
+}
+
+.five .dots-container .dot:nth-of-type(3) {
+	grid-area: five;
+}
+
+.five .dots-container .dot:nth-of-type(4) {
+	grid-area: seven;
+}
+
+.five .dots-container .dot:nth-of-type(5) {
+	grid-area: nine;
 }
 
 .cube .six {
 	transform: rotateY(180deg) translateZ(150px);
 }
 
-.roll-one {
-	transform: translateZ(-150px) rotateY(0deg);
+.six .dots-container .dot:nth-of-type(1) {
+	grid-area: one;
 }
 
-.roll-two {
-	transform: translateZ(-150px) rotateY(-90deg);
+.six .dots-container .dot:nth-of-type(2) {
+	grid-area: three;
 }
 
-.roll-three {
-	transform: translateZ(-150px) rotateX(-90deg);
+.six .dots-container .dot:nth-of-type(3) {
+	grid-area: four;
 }
 
-.roll-four {
-	transform: translateZ(-150px) rotateX(90deg);
+.six .dots-container .dot:nth-of-type(4) {
+	grid-area: six;
 }
 
-.roll-five {
-	transform: translateZ(-150px) rotateY(90deg);
+.six .dots-container .dot:nth-of-type(5) {
+	grid-area: seven;
 }
 
-.roll-six {
-	transform: translateZ(-150px) rotateY(-180deg);
+.six .dots-container .dot:nth-of-type(6) {
+	grid-area: nine;
 }
