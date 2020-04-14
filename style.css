@@ -15,31 +15,37 @@
 	position: relative;
 	transform-style: preserve-3d;
 	transform: translateZ(-150px);
-	transition: transform 1s;
+	transition: transform 3s ease-out;
 }
 
 .cube.roll-one {
-	transform: translateZ(-150px) rotateY(0deg);
+	/* x = 0 y = 0 */
+	transform: translateZ(-150px) rotateX(720deg) rotateY(1080deg)
 }
 
 .cube.roll-two {
-	transform: translateZ(-150px) rotateY(-90deg);
+	/* x = 0 y = -90 */
+	transform: translateZ(-150px) rotateX(0deg) rotateY(-90deg);
 }
 
 .cube.roll-three {
-	transform: translateZ(-150px) rotateX(-90deg);
+	/* x = -90 y = 0 */
+	transform: translateZ(-150px) rotateX(-1170deg) rotateY(-720deg);
 }
 
 .cube.roll-four {
-	transform: translateZ(-150px) rotateX(90deg);
+	/* x = 90 y = 0 */
+	transform: translateZ(-150px) rotateX(810deg) rotateY(1080deg);
 }
 
 .cube.roll-five {
-	transform: translateZ(-150px) rotateY(90deg);
+	/* x = 0 y = 90 */
+	transform: translateZ(-150px) rotateX(-360deg) rotateY(90deg);
 }
 
 .cube.roll-six {
-	transform: translateZ(-150px) rotateY(-180deg);
+	/* x = 0 y = -180 */
+	transform: translateZ(-150px) rotateX(-720deg) rotateY(-1260deg);
 }
 
 .side {
@@ -61,8 +67,7 @@
 	grid-template-columns: 100px 90px 100px;
 	grid-row-gap: 10px;
 	grid-column-gap: 10px;
-	grid-template-areas:
-		"one two three"
+	grid-template-areas: "one two three"
 		"four five six"
 		"seven eight nine";
 }
