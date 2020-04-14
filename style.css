@@ -54,13 +54,26 @@
 }
 
 .dots-container {
+	padding-left: 20px;
+	padding-top: 20px;
 	display: grid;
-	grid-template-rows: 100px 100px 100px;
-	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 90px 100px;
+	grid-template-columns: 100px 90px 100px;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
 	grid-template-areas:
 		"one two three"
 		"four five six"
 		"seven eight nine";
+}
+
+.dot {
+	height: 40px;
+	width: 40px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
 }
 
 .cube .one {
