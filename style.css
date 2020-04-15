@@ -18,34 +18,65 @@
 	transition: transform 3s ease-out;
 }
 
-.cube.roll-one {
+.cube.odd.roll-one {
 	/* x = 0 y = 0 */
 	transform: translateZ(-150px) rotateX(720deg) rotateY(360deg)
 }
 
-.cube.roll-two {
+.cube.odd.roll-two {
 	/* x = 0 y = -90 */
 	transform: translateZ(-150px) rotateX(360deg) rotateY(630deg);
 }
 
-.cube.roll-three {
+.cube.odd.roll-three {
 	/* x = -90 y = 0 */
 	transform: translateZ(-150px) rotateX(630deg) rotateY(720deg);
 }
 
-.cube.roll-four {
+.cube.odd.roll-four {
 	/* x = 90 y = 0 */
 	transform: translateZ(-150px) rotateX(450deg) rotateY(720deg);
 }
 
-.cube.roll-five {
+.cube.odd.roll-five {
 	/* x = 0 y = 90 */
 	transform: translateZ(-150px) rotateX(720deg) rotateY(450deg);
 }
 
-.cube.roll-six {
+.cube.odd.roll-six {
 	/* x = 0 y = -180 */
 	transform: translateZ(-150px) rotateX(360deg) rotateY(900deg);
+}
+
+.cube.even.roll-one {
+	/* x = 0 y = 0 */
+	transform: translateZ(-150px) rotateX(-720deg) rotateY(-360deg);
+}
+
+.cube.even.roll-two {
+	/* x = 0 y = -90 */
+	transform: translateZ(-150px) rotateX(-720deg) rotateY(-450deg);
+}
+
+.cube.even.roll-three {
+	/* x = -90 y = 0 */
+	transform: translateZ(-150px) rotateX(-450deg) rotateY(-720deg);
+
+}
+
+.cube.even.roll-four {
+	/* x = 90 y = 0 */
+	transform: translateZ(-150px) rotateX(-630deg) rotateY(-720deg);
+}
+
+.cube.even.roll-five {
+	/* x = 0 y = 90 */
+	transform: translateZ(-150px) rotateX(-360deg) rotateY(-630deg);
+}
+
+.cube.even.roll-six {
+	/* x = 0 y = -180 */
+	transform: translateZ(-150px) rotateX(-360deg) rotateY(-900deg);
 }
 
 .side {
