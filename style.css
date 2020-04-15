@@ -20,32 +20,32 @@
 
 .cube.roll-one {
 	/* x = 0 y = 0 */
-	transform: translateZ(-150px) rotateX(720deg) rotateY(1080deg)
+	transform: translateZ(-150px) rotateX(720deg) rotateY(360deg)
 }
 
 .cube.roll-two {
 	/* x = 0 y = -90 */
-	transform: translateZ(-150px) rotateX(0deg) rotateY(-90deg);
+	transform: translateZ(-150px) rotateX(360deg) rotateY(630deg);
 }
 
 .cube.roll-three {
 	/* x = -90 y = 0 */
-	transform: translateZ(-150px) rotateX(-1170deg) rotateY(-720deg);
+	transform: translateZ(-150px) rotateX(630deg) rotateY(720deg);
 }
 
 .cube.roll-four {
 	/* x = 90 y = 0 */
-	transform: translateZ(-150px) rotateX(810deg) rotateY(1080deg);
+	transform: translateZ(-150px) rotateX(450deg) rotateY(720deg);
 }
 
 .cube.roll-five {
 	/* x = 0 y = 90 */
-	transform: translateZ(-150px) rotateX(-360deg) rotateY(90deg);
+	transform: translateZ(-150px) rotateX(720deg) rotateY(450deg);
 }
 
 .cube.roll-six {
 	/* x = 0 y = -180 */
-	transform: translateZ(-150px) rotateX(-720deg) rotateY(-1260deg);
+	transform: translateZ(-150px) rotateX(360deg) rotateY(900deg);
 }
 
 .side {
@@ -60,14 +60,15 @@
 }
 
 .dots-container {
-	padding-left: 20px;
-	padding-top: 20px;
+	padding-left: 40px;
+	padding-top: 40px;
 	display: grid;
-	grid-template-rows: 100px 90px 100px;
-	grid-template-columns: 100px 90px 100px;
+	grid-template-rows: 80px 70px 80px;
+	grid-template-columns: 80px 70px 80px;
 	grid-row-gap: 10px;
 	grid-column-gap: 10px;
-	grid-template-areas: "one two three"
+	grid-template-areas:
+		"one two three"
 		"four five six"
 		"seven eight nine";
 }
