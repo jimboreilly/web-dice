@@ -30,8 +30,6 @@ const classForN = n => {
 }
 
 const roll = () => {
-	console.log(isRolling)
-
 	if (!isRolling) {
 		//block button spam
 		isRolling = true;
