@@ -1,0 +1,15 @@
+{
+  "name": "web-dice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jimboreilly/web-dice.git",
+  "author": "JimboReilly <jimreilly28@gmail.com>",
+  "license": "CC0",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "css": "node-sass src/style.scss -o dist",
+    "css:watch": "npm run css && node-sass src/style.scss -wo dist"
+  }
+}

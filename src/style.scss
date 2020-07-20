@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  margin: 100px;
+  perspective: 600px;
+}
+
+.cube {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px);
+  transition: transform 3s ease-out;
+}
+
+.cube.odd.roll-one {
+  /* x = 0 y = 0 */
+  transform: translateZ(-150px) rotateX(720deg) rotateY(360deg)
+}
+
+.cube.odd.roll-two {
+  /* x = 0 y = -90 */
+  transform: translateZ(-150px) rotateX(360deg) rotateY(630deg);
+}
+
+.cube.odd.roll-three {
+  /* x = -90 y = 0 */
+  transform: translateZ(-150px) rotateX(630deg) rotateY(720deg);
+}
+
+.cube.odd.roll-four {
+  /* x = 90 y = 0 */
+  transform: translateZ(-150px) rotateX(450deg) rotateY(720deg);
+}
+
+.cube.odd.roll-five {
+  /* x = 0 y = 90 */
+  transform: translateZ(-150px) rotateX(720deg) rotateY(450deg);
+}
+
+.cube.odd.roll-six {
+  /* x = 0 y = -180 */
+  transform: translateZ(-150px) rotateX(360deg) rotateY(900deg);
+}
+
+.cube.even.roll-one {
+  /* x = 0 y = 0 */
+  transform: translateZ(-150px) rotateX(-720deg) rotateY(-360deg);
+}
+
+.cube.even.roll-two {
+  /* x = 0 y = -90 */
+  transform: translateZ(-150px) rotateX(-720deg) rotateY(-450deg);
+}
+
+.cube.even.roll-three {
+  /* x = -90 y = 0 */
+  transform: translateZ(-150px) rotateX(-450deg) rotateY(-720deg);
+
+}
+
+.cube.even.roll-four {
+  /* x = 90 y = 0 */
+  transform: translateZ(-150px) rotateX(-630deg) rotateY(-720deg);
+}
+
+.cube.even.roll-five {
+  /* x = 0 y = 90 */
+  transform: translateZ(-150px) rotateX(-360deg) rotateY(-630deg);
+}
+
+.cube.even.roll-six {
+  /* x = 0 y = -180 */
+  transform: translateZ(-150px) rotateX(-360deg) rotateY(-900deg);
+}
+
+.side {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  font-size: 70px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.dots-container {
+  padding-left: 40px;
+  padding-top: 40px;
+  display: grid;
+  grid-template-rows: 80px 70px 80px;
+  grid-template-columns: 80px 70px 80px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+}
+
+.dot {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.cube .one {
+  transform: rotateY(0deg) translateZ(150px);
+}
+
+.one .dots-container .dot:nth-of-type(1) {
+  grid-area: five;
+}
+
+.cube .two {
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.two .dots-container .dot:nth-of-type(1) {
+  grid-area: one;
+}
+
+.two .dots-container .dot:nth-of-type(2) {
+  grid-area: nine;
+}
+
+.cube .three {
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.three .dots-container .dot:nth-of-type(1) {
+  grid-area: one;
+}
+
+.three .dots-container .dot:nth-of-type(2) {
+  grid-area: five;
+}
+
+.three .dots-container .dot:nth-of-type(3) {
+  grid-area: nine;
+}
+
+.cube .four {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+.four .dots-container .dot:nth-of-type(1) {
+  grid-area: one;
+}
+
+.four .dots-container .dot:nth-of-type(2) {
+  grid-area: three;
+}
+
+.four .dots-container .dot:nth-of-type(3) {
+  grid-area: seven;
+}
+
+.four .dots-container .dot:nth-of-type(4) {
+  grid-area: nine;
+}
+
+.cube .five {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.five .dots-container .dot:nth-of-type(1) {
+  grid-area: one;
+}
+
+.five .dots-container .dot:nth-of-type(2) {
+  grid-area: three;
+}
+
+.five .dots-container .dot:nth-of-type(3) {
+  grid-area: five;
+}
+
+.five .dots-container .dot:nth-of-type(4) {
+  grid-area: seven;
+}
+
+.five .dots-container .dot:nth-of-type(5) {
+  grid-area: nine;
+}
+
+.cube .six {
+  transform: rotateY(180deg) translateZ(150px);
+}
+
+.six .dots-container .dot:nth-of-type(1) {
+  grid-area: one;
+}
+
+.six .dots-container .dot:nth-of-type(2) {
+  grid-area: three;
+}
+
+.six .dots-container .dot:nth-of-type(3) {
+  grid-area: four;
+}
+
+.six .dots-container .dot:nth-of-type(4) {
+  grid-area: six;
+}
+
+.six .dots-container .dot:nth-of-type(5) {
+  grid-area: seven;
+}
+
+.six .dots-container .dot:nth-of-type(6) {
+  grid-area: nine;
+}
