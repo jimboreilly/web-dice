@@ -3,15 +3,15 @@
 }
 
 .container {
-  width: 300px;
-  height: 300px;
-  margin: 100px;
-  perspective: 600px;
+  width: 18.75em;
+  height: 18.75em;
+  perspective: 37.5em;
+  margin: 6.25em auto 0 auto;
 }
 
 .cube {
-  width: 300px;
-  height: 300px;
+  width: 18.75em;
+  height: 18.75em;
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-150px);
@@ -204,22 +204,20 @@
 }
 
 .side {
-  width: 300px;
-  height: 300px;
+  width: 18.75em;
+  height: 18.75em;
   position: absolute;
   background-color: antiquewhite;
   border: 2px solid black;
-  font-size: 70px;
   text-align: center;
   border-radius: 10px;
 }
 
 .dots-container {
-  padding-left: 40px;
-  padding-top: 40px;
+  padding: 2.5em 0 0 2.5em;
   display: grid;
-  grid-template-rows: 80px 70px 80px;
-  grid-template-columns: 80px 70px 80px;
+  grid-template-rows: 5em 4.375em 5em;
+  grid-template-columns: 5em 4.375em 5em;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   grid-template-areas:
@@ -229,8 +227,8 @@
 }
 
 .dot {
-  height: 40px;
-  width: 40px;
+  height: 2.5em;
+  width: 2.5em;
   background-color: black;
   border-radius: 50%;
   display: inline-block;
